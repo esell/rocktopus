@@ -1,0 +1,35 @@
+{{ partial "header.html" . }}
+{{ $baseurl := .Site.BaseURL }}
+
+<div class="row">
+	<div class="twelve columns">
+		<h2>{{ .Title }}</h2>
+	</div>
+</div>
+{{ if isset .Site.Params "contactEmail" }}
+<div class="row">
+	<div class="one columns">
+		<i class="fa fa-envelope-o fa-4x"></i>
+	</div>
+	<div class="eight columns" style="padding-top:1em;">
+		<a href="mailto:{{ .Site.Params.contactEmail }}">{{ .Site.Params.contactEmail }}</a>
+	</div>
+</div>
+{{ end }}
+ {{ if isset .Site.Params "contactTwitter" }}
+<div class="row">
+	<div class="one columns">
+        <i class="fa fa-twitter fa-4x"></i>
+    </div>
+	<div class="eight columns" style="padding-top:1em;">
+		<a href="https://twitter.com/{{ .Site.Params.contactTwitter }}">@{{ .Site.Params.contactTwitter }}</a>
+    </div>
+</div>
+{{ end }}
+<div class="row">
+	<div class="twelve columns">
+		&nbsp;
+	</div>
+</div>
+
+{{ partial "footer.html" . }}

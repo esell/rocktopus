@@ -1,0 +1,20 @@
+{{ partial "header.html" . }}
+<div class="row">
+	<div class="twelve columns">
+		{{ $data := .Data }}
+		{{ range $key, $value := .Data.Terms }}
+		<span style="font-size:24px;font-weight:bold">{{ $key }}</span><br>
+		{{ range $value.Pages.ByDate }}
+		<span style="margin-left:22px">{{ .Date.Format "Jan 02, 2006" }} - <a href="{{ .Permalink }}">{{ .Title }}</a></span><br>
+		{{ end }}
+		{{ end }}
+	</div>
+</div>
+
+<div class="row">
+	<div class="twelve columns">
+		&nbsp;
+	</div>
+</div>
+
+{{ partial "footer.html" . }}

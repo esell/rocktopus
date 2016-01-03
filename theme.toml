@@ -1,0 +1,13 @@
+name = "rocktopus"
+description = "A clean and simple theme for Hugo"
+license = "MIT"
+licenselink = "http://opensource.org/licenses/MIT"
+homepage = "http://github.com/esell/rocktopus"
+source_repo = "http://github.com/esell/rocktopus"
+tags = ["blog"]
+features = ["blog", ]
+min_version = 0.15
+
+[author]
+    name = "esell"
+    homepage = "http://github.com/esell/"

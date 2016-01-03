@@ -1,0 +1,33 @@
+{{ partial "header.html" . }}
+{{ $baseurl := .Site.BaseURL }}
+
+<div class="row">
+	<div class="twelve columns">
+		<a class="post-title-link" href="{{ .Permalink }}">{{ .Title }}</a>
+	</div>
+</div>
+<div class="row">
+	<div class="nine columns">
+		<span class="post-postedby">posted by {{ .Params.author }} on {{ .Date.Format "Jan 02, 2006" }}</span>
+	</div>
+	<div class="three columns">
+		<span style="font-size:small;">
+			{{ with .Params.tags }}
+			<i class="fa fa-tags"></i> {{ range . }}<a href="{{ $baseurl }}tags/{{ . | urlize }}">{{ . }}</a> {{ end }}
+			{{ end }}
+		</span>
+	</div>
+</div>
+<div class="row">
+	<div class="twelve columns">
+		{{ .Content }}
+	</div>
+</div>
+
+<div class="row">
+	<div class="twelve columns">
+		&nbsp;
+	</div>
+</div>
+
+{{ partial "footer.html" . }}

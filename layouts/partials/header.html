@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>{{ .Title }}</title>
+		{{ with .Site.Author.name }}<meta name="author" content="{{ . }}">{{ end }}
+		{{ .Hugo.Generator }}
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/normalize.css">
+		<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/skeleton.css">
+		<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/custom.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		{{ template "_internal/google_analytics.html" . }}
+	</head>
+	<body>
+		<div class="container" style="background-color:#FFFFFF; border-bottom: 0px solid #eee;">
+			<div class="row">
+				<div class="eight columns">
+					<a href="{{ .Site.BaseURL }}" style="text-decoration: none; color: #333;">{{ .Site.Params.blogHeader | safeHTML }}</a>
+					{{ with .Site.Params.tagline }}
+					<span style="font-size: 14px;">|<i>{{ . }}</i></span>
+					{{ end }}
+				</div>
+				<div class="four columns" >
+					{{ $menuCount := len .Site.Menus.main }}
+					{{ range $index, $element := .Site.Menus.main }}
+					{{ if eq $index (sub $menuCount 1) }}
+					<a class="navbar-rlink" href="{{ $element.URL | absURL }}">{{ $element.Name }}</a>
+					{{ else }}
+					<a class="navbar-link" href="{{ $element.URL | absURL }}">{{ $element.Name }}</a>
+					{{ end }}
+					{{ end }}
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			{{ with  .Site.Params.headerimg }}
+			<div class="row">
+				<div class="twelve columns" >
+					<img class="u-max-full-width" src="{{ $.Site.BaseURL }}/img/{{ . }}">
+				</div>
+			</div>
+			{{ end }}
