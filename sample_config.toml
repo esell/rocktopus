@@ -3,6 +3,7 @@ languageCode = "en-us"
 title = "My Awesome Site"
 theme = "rocktopus"
 GoogleAnalytics = "abcde"
+paginate = 4
 MetaDataFormat = "toml"
 [permalinks]
     post = "/:year/:month/:title/"
@@ -23,19 +24,19 @@ MetaDataFormat = "toml"
 [menu]
     # Menu for the nav bar.
     # Ideal count is 3 items, see demo site for an example
-    [[menu.main]]
+    [[menu.nav]]
     identifier = "projects"
     name       = "projects"
     url        = "/series"
     weight     = 0
 
-    [[menu.main]]
+    [[menu.nav]]
     identifier = "code"
     name       = "code"
     url        = "https://github.com/esell/"
     weight     = 1
 
-    [[menu.main]]
+    [[menu.nav]]
     identifier = "contact"
     name       = "contact"
     url        = "/contact"

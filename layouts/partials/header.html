@@ -23,8 +23,8 @@
 					{{ end }}
 				</div>
 				<div class="four columns" >
-					{{ $menuCount := len .Site.Menus.main }}
-					{{ range $index, $element := .Site.Menus.main }}
+					{{ $menuCount := len .Site.Menus.nav }}
+					{{ range $index, $element := .Site.Menus.nav }}
 					{{ if eq $index (sub $menuCount 1) }}
 					<a class="navbar-rlink" href="{{ $element.URL | absURL }}">{{ $element.Name }}</a>
 					{{ else }}
