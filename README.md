@@ -3,6 +3,8 @@ This theme uses the [Skeleton CSS framework](http://getskeleton.com/)
 
 ![Theme screenshot](images/screenshot.png)
 
+![Theme screenshot dark](images/screenshot-dark.png)
+
 # Features
 * Lightweight. All CSS and no javascript
 * Choice of light or dark color scheme
