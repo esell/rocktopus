@@ -13,11 +13,11 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		{{ template "_internal/google_analytics.html" . }}
 	</head>
-	<body>
-		<div class="container" style="background-color:#FFFFFF; border-bottom: 0px solid #eee;">
+	<body class="color-scheme-{{ .Site.Params.colorscheme }}">
+		<div class="container" style="border-bottom: 0px solid #eee;">
 			<div class="row">
 				<div class="eight columns">
-					<a href="{{ .Site.BaseURL }}" style="text-decoration: none; color: #333;">{{ .Site.Params.blogHeader | safeHTML }}</a>
+					<a href="{{ .Site.BaseURL }}" class="sitename">{{ .Site.Params.blogHeader | safeHTML }}</a>
 					{{ with .Site.Params.tagline }}
 					<span style="font-size: 14px;">|<i>{{ . }}</i></span>
 					{{ end }}

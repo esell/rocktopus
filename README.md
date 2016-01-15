@@ -5,6 +5,7 @@ This theme uses the [Skeleton CSS framework](http://getskeleton.com/)
 
 # Features
 * Lightweight. All CSS and no javascript
+* Choice of light or dark color scheme
 * Configurable menu
 * Supports tags
 * Supports Hugo pagination
