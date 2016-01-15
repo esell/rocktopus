@@ -24,7 +24,7 @@
 	<div class="three columns">
 		<span style="font-size:small;">
 			{{ with .Params.tags }}
-			<i class="fa fa-tags"></i> {{ range . }}<a href="{{ $baseurl }}tags/{{ . | urlize }}">{{ . }}</a> {{ end }}
+			<i class="fa fa-tags"></i> {{ range . }}<a href="{{ $baseurl }}tags/{{ . | urlize }}" class="tag-link">{{ . }}</a> {{ end }}
 			{{ end }}
 		</span>
 	</div>
@@ -35,10 +35,10 @@
 	<div class="twelve columns">
 		<center>
 			{{ with $paginator.HasPrev }}
-			<a href="{{ $paginator.Prev.URL }}"><i class="fa fa-arrow-circle-left fa-2x"></i></a>
+			<a href="{{ $paginator.Prev.URL }}" class="arrow-link"><i class="fa fa-arrow-circle-left fa-2x"></i></a>
 			{{ end }}
 			{{ with $paginator.HasNext }}
-			<a href="{{ $paginator.Next.URL }}"><i class="fa fa-arrow-circle-right fa-2x"></i></a>
+			<a href="{{ $paginator.Next.URL }}" class="arrow-link"><i class="fa fa-arrow-circle-right fa-2x"></i></a>
 			{{ end }}
 		</center>
 	</div>

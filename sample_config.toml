@@ -13,6 +13,8 @@ MetaDataFormat = "toml"
 [author]
     name = "someperson"
 [params]
+	# supports either dark or light color scheme
+	colorscheme = "light"
     # text for the header section
     blogHeader = "<span style=\"font-size: 36px; \">my<b>Site</b></span>"
     tagline = "something witty"
