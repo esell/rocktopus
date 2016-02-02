@@ -1,9 +1,9 @@
 Rocktopus is a re-work of my previous theme. The goal was to clean it up a bit and add in some of the newer Hugo features.
 This theme uses the [Skeleton CSS framework](http://getskeleton.com/)
 
-![Theme screenshot](images/screenshot.png)
+![Theme screenshot](https://raw.githubusercontent.com/esell/rocktopus/master/images/screenshot.png)
 
-![Theme screenshot dark](images/screenshot-dark.png)
+![Theme screenshot dark](https://raw.githubusercontent.com/esell/rocktopus/master/images/screenshot-dark.png)
 
 # Features
 * Lightweight. All CSS and no javascript
