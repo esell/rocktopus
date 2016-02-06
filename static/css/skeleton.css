@@ -125,9 +125,9 @@ html {
 
 body {
   font-size: 1.5em; 
-  line-height: 1.6;
+  line-height: 1.5;
   font-weight: 400;
-  font-family: "Hack", monospace, "Open Sans", "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Hack", monospace;
   }
 
 
@@ -293,9 +293,10 @@ label > .label-body {
 â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“â€“ */
 ul {
   list-style: circle inside; 
-  margin-left: 0;
-   padding-left: 1em;
-    text-indent: -1em;
+  /*
+  padding-left: 1em;
+  text-indent: -1em;
+  */
 }
 ol {
   list-style: decimal inside; }
