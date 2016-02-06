@@ -6,6 +6,8 @@
 		{{ with .Site.Author.name }}<meta name="author" content="{{ . }}">{{ end }}
 		{{ .Hugo.Generator }}
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.019/css/hack.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
 		<link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/normalize.css">
 		<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/skeleton.css">
@@ -17,10 +19,12 @@
 		<div class="container" style="border-bottom: 0px solid #eee;">
 			<div class="row">
 				<div class="eight columns">
+					<!--
 					<a href="{{ .Site.BaseURL }}" class="sitename">{{ .Site.Params.blogHeader | safeHTML }}</a>
 					{{ with .Site.Params.tagline }}
 					<span style="font-size: 14px;">|<i>{{ . }}</i></span>
 					{{ end }}
+					-->
 				</div>
 				<div class="four columns" >
 					{{ with .Site.Menus.nav }}
@@ -44,3 +48,25 @@
 				</div>
 			</div>
 			{{ end }}
+                        <div class="row">
+                            <div class="twelve columns">
+<center>
+                                <pre style="font-size: 9px;font-family:monospace;">
+<span class="ascii-row-one"> .,:::::: .::::::.  </span>
+<span class="ascii-row-two"> ;;;;'''';;;`    `  </span>
+<span class="ascii-row-three"> [[cccc '[==/[[[[, </span>
+<span class="ascii-row-four"> $$""""   '''    $ </span>
+<span class="ascii-row-five"> 888oo,__88b    dP </span>
+ <span class="ascii-row-six">""""YUMMM"YMmMY"  </span>
+
+<span class="ascii-row-one">   ::   .: .,::::::   :::.  :::      .::..-:.     ::-.  ::::::.    :::.:::::::-.   ...    ::: .::::::.:::::::::::::::::::..   :::.,:::::: .::::::.</span>
+<span class="ascii-row-two">  ,;;   ;;,;;;;''''   ;;`;; ';;,   ,;;;'  ';;.   ;;;;'  ;;;`;;;;,  `;;; ;;,   `';, ;;     ;;;;;;`    `;;;;;;;;'''';;;;``;;;;  ;;;;;;;'''';;;`    `</span>
+<span class="ascii-row-three">  ,[[[,,,[[[ [[cccc   ,[[ '[[,\[[  .[[/      '[[,[[['    [[[  [[[[[. '[[ `[[     [[[['     [[['[==/[[[[,    [[      [[[,/[[['  [[[ [[cccc '[==/[[[[,</span>
+<span class="ascii-row-four">  "$$$"""$$$ $$""""  c$$$cc$$$cY$c.$$"         c$$"      $$$  $$$ "Y$c$$  $$,    $$$$      $$$  '''    $    $$      $$$$$$c    $$$ $$""""   '''    $</span>
+<span class="ascii-row-five">   888   "88o888oo,__ 888   888,Y88P         ,8P"`       888  888    Y88  888_,o8P'88    .d888 88b    dP    88,     888b "88bo,888 888oo,__88b    dP</span>
+<span class="ascii-row-six">  MMM    YMM""""YUMMMYMM   ""`  MP         mM"          MMM  MMM     YM  MMMMP"`   "YmmMMMM""  "YMmMY"     MMM     MMMM   "W" MMM """"YUMMM"YMmMY"</span>
+
+                                </pre>
+</center>
+                            </div>
+                        </div>

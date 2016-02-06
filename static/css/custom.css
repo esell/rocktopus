@@ -177,3 +177,22 @@
 .color-scheme-dark .navbar-link:hover, .navbar-rlink:hover {
     color: #fff;
 }
+
+.color-scheme-dark .ascii-row-one {
+    color: #6abce2;
+}
+.color-scheme-dark .ascii-row-two {
+    color: #55b2de;
+}
+.color-scheme-dark .ascii-row-three {
+    color: #3fa9da;
+}
+.color-scheme-dark .ascii-row-four {
+    color: #2a9fd6;
+}
+.color-scheme-dark .ascii-row-five {
+    color: #258fc1;
+}
+.color-scheme-dark .ascii-row-six {
+    color: #2180ac;
+}
