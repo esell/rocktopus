@@ -17,7 +17,9 @@
 		<div class="container" style="border-bottom: 0px solid #eee;">
 			<div class="row">
 				<div class="eight columns">
-					<a href="{{ .Site.BaseURL }}" class="sitename">{{ .Site.Params.blogHeader | safeHTML }}</a>
+                                        {{ with .Site.Params.blogHeader }}
+					<a href="{{ $.Site.BaseURL }}" class="sitename">{{ $.Site.Params.blogHeader | safeHTML }}</a>
+                                        {{ end }}
 					{{ with .Site.Params.tagline }}
 					<span style="font-size: 14px;">|<i>{{ . }}</i></span>
 					{{ end }}
